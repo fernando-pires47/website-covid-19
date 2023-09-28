@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+
+    <title>Contra Covid</title>
+
+    <style>
+        p{
+         text-indent: 3px !important;
+        }
+        
+        .info-alert{
+            text-align: center;
+            padding: 10px 30px;
+            padding-left: 30px;
+            background: rgb(223, 246, 117);
+        }
+        .info-error{
+            text-align: center;
+            padding: 10px 30px;
+            padding-left: 30px;
+            background: rgb(253, 181, 174);
+        }
+
+        .info-info{
+            text-align: center;
+            padding: 10px 30px;
+            padding-left: 30px;
+            background: rgb(117, 194, 246);
+        }
+
+        textarea{
+            width : 250px;
+        }
+
+        form{
+            margin: 40px;
+        }
+
+        legend{
+            font-size: 13pt;
+            background-color: #383838;
+            padding: 5px 0px 5px 10px;
+            margin: 10px 0px 10px 0px;
+            color: white;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_css/estilo.css">
+</head>
+
+<body>
+
+    <header id="interface">
+        <header id="cabecalho">
+            <h2>COVID-19</h2>
+            <img id="head" src="_imagens/covid-branco.jpg">
+        </header>
+
+        <img id="icone" src="_imagens/cadastro.png">
+
+        <nav id="menu">
+            <ul>
+                <a href="index.html"><li onmouseover="mudaFoto('_imagens/home.jpg')" onmouseout="mudaFoto('_imagens/cadastro.png')">Covid</li></a>
+                <a href="cadastro.html"><li onmouseover="mudaFoto('_imagens/cadastro.png')" onmouseout="mudaFoto('_imagens/cadastro.png')">Cadastro</li></a>
+                <a href="buscar.html"><li onmouseover="mudaFoto('_imagens/lupa.png')" onmouseout="mudaFoto('_imagens/cadastro.png')">Buscar</li></a>
+            </ul>
+        </nav>
+
+        <section id="corpo">
+            <header id="cabecalho2">
+                Informe os dados da sua cidade
+            </header>
+
+            <form id="formulario">
+
+                <legend>Identificação</legend>
+
+                <div class="row">
+                    <div><label for="nome">Nome</label></div> 
+                    <input type="text" name="nome" id="nome" maxlength="45" placeholder="Nome Completo">
+                </div>
+                <div class="row">
+                    <div><label for="cpf">CPF</label></div>
+                    <input type="text" name="cpf" id="cpf" maxlength="14" placeholder="CPF">
+                </div>
+                <div class="row">
+                    <div><label for="email">E-mail</label></div>
+                    <input type="email" name="email" id="email" maxlength="45" placeholder="E-mail">
+                </div>
+                  
+
+               <legend>Dados</legend>
+
+               <div>
+                    <div class="row">
+                        <div><label for="dataref">Data de Referência</label></div>
+                        <input type="date" name="dataref" id="dataref">
+                    </div>
+
+                    <div class="row">
+                            <div><label for="cidade">Cidade </label></div>
+                            <input type="text" name="cidade" id="cidade" maxlength="25" placeholder="Cidade">
+                    </div>
+                
+
+                    <div class="row">
+                        <div><label for="estado">Estado</label></div>
+                        <select name="estado" id="estado" placeholder="Estado" maxlength="2">
+                            <option></option>
+                            <option>AC</option>
+                            <option>AL</option>
+                            <option>AP</option>
+                            <option>AM</option>
+                            <option>BA</option>
+                            <option>CE</option>
+                            <option>DF</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MA</option>
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>MG</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PR</option>
+                            <option>PE</option>
+                            <option>PI</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option>
+                            <option>SC</option>
+                            <option>SP</option>
+                            <option>SE</option>
+                            <option>TO</option>
+                        </select>
+                    </div>
+               </div>
+
+               <div>
+                    <div class="row">
+                        <div><label for="totcasos">Total de casos</label></div>
+                        <input type="number" name="totcasos" id="totcasos" min="0" max="9999999" placeholder="Total de casos">
+                    </div>
+
+                    <div class="row">
+                        <div><label for="recuperados">Recuperados</label></div>
+                        <input type="number" name="recuperados" id="recuperados" min="0" max="9999999" placeholder="Recuperados">
+                    </div>
+
+                    <div class="row">
+                        <div><label for="mortos">Mortos</label></div>
+                        <input type="number" name="mortos" id="mortos" min="0" max="9999999" placeholder="Mortos">
+                    </div>
+               </div>
+               
+              <div>
+                    <div class="row">
+                        <div><label for="numcasos">Informaçoes Complementares</label></div>
+                        <div>
+                            <textarea name="infocomplement" id="infocomplement" cols="35" rows="5">
+                            </textarea>    
+                        </div>
+                    </div>
+              </div>
+
+              <p id="info" class="invisible info-info">Obrigado pela colaboração, suas informações foram salvar com sucesso</p>
+              <p id="erro-ajax" class="invisible info-error">Ocorreu um erro ao salvar os dados</p>
+              <p id="alert" class="info-alert">A informação é nossa maior aliada no momento atual. Colabore de forma honesta, vidas estão em jogo !</p>
+                   
+                <button class="mt-20" id="vsalvar">Salvar</button>
+           </form>
+        </section>
+
+        <footer id="rodape">
+            <h3>&copy; 2020 - Fernando Pires</h3>
+            <h4><a target="_blank" href="http://www.facebook.com/fernando.pirees"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a> | <a target="_blank" href="https://www.instagram.com/feernandopires/?hl=pt-br"> <i class="fa fa-instagram" aria-hidden="true"></i></a></h4>
+        </footer>
+
+    </header>
+</body>
+<script language="JavaScript" src="_javascript/cadastro.js">
+</script>
+</html>

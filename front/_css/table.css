@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+
+table {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+table thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+
+table thead tr th { 
+  font-weight: bold;
+  padding: 5px 42px;
+  padding-left: 42px;
+  color: white;
+  background: #383838;
+}
+
+table tbody tr { 
+  color: #555;
+}
+table tbody tr td {
+  text-align: center;
+  padding: 7px 10px;
+  background:#e1e1e1;
+  color: black;
+}

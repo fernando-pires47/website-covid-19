@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+
+    <title>Contra Covid</title>
+
+    <style>
+        iframe{
+            position: relative;
+            margin : auto auto auto 33%;
+        }
+
+        .border-frame{
+            background-color: #ececec;
+            padding-bottom: 10px;
+            padding-top: 5px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .h3-header{
+            text-align: center;
+            color: #512323;
+            font-size: 15pt;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .textos{
+            background-color: #ececec;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 40%;
+            margin-left: 50px;
+            margin-right: 40px;
+            border-radius: 15px;
+            display: inline-block;
+
+        }
+
+        .textos h2{
+            color: #512323;
+            font-size: 15pt;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .text-block{
+            margin-bottom: 20px;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_css/estilo.css">
+
+</head>
+<body>
+
+    <header id="interface">
+        <header id="cabecalho">
+            <h2>COVID-19</h2>
+            <img id="head" src="_imagens/covid-branco.jpg">
+        </header>
+
+        <img id="icone" src="_imagens/home.jpg">
+
+        <nav id="menu">
+            <ul>
+                <a href="index.html"><li onmouseover="mudaFoto('_imagens/home.jpg')" onmouseout="mudaFoto('_imagens/home.jpg')">Covid</li></a>
+                <a href="cadastro.html"><li onmouseover="mudaFoto('_imagens/cadastro.png')" onmouseout="mudaFoto('_imagens/home.jpg')">Cadastro</li></a>
+                <a href="buscar.html"><li onmouseover="mudaFoto('_imagens/lupa.png')" onmouseout="mudaFoto('_imagens/home.jpg')">Buscar</li></a>
+            </ul>
+        </nav>
+
+        <section id="corpo">
+            <header id="cabecalho2">
+                Sobre a doença
+            </header>
+
+            <section class="text-block">
+                <div class="textos">
+                    <h2>O que é COVID-19</h2>
+                    <p>
+                        A COVID-19 é uma doença causada pelo coronavírus SARS-CoV-2, que apresenta um quadro clínico que varia de infecções assintomáticas a quadros respiratórios graves. De acordo com a Organização Mundial de Saúde (OMS), a maioria dos pacientes com COVID-19 (cerca de 80%) podem ser assintomáticos e cerca de 20% dos casos podem requerer atendimento hospitalar por apresentarem dificuldade respiratória e desses casos aproximadamente 5% podem necessitar de suporte para o tratamento de insuficiência respiratória (suporte ventilatório).
+                    </p>
+                </div>
+    
+                <div class="textos">
+                    <h2>Quais são os sintomas</h2>
+                    <p>
+                        Os sintomas da COVID-19 podem variar de um simples resfriado até uma pneumonia severa. Sendo os sintomas mais comuns:
+                        <ul>
+                            <li>Tosse</li>
+                            <li>Febre</li>
+                            <li>Coriza</li>
+                            <li>Dor de garganta</li>
+                            <li>Dificuldade para respirar</li>
+                        </ul>
+                    </p>
+                </div>
+            </section>
+
+            <section class="text-block">
+                <div class="textos">
+                    <h2>Como é transmitido</h2>
+                    <p>
+                        A transmissão acontece de uma pessoa doente para outra ou por contato próximo por meio de:
+                        <ul>
+                            <li>Toque do aperto de mão</li>
+                            <li>Gotículas de saliva</li>
+                            <li>Espirro</li>
+                            <li>Tosse</li>
+                            <li>Catarro</li>
+                            <li>Objetos ou superfícies contaminadas, como celulares, mesas, maçanetas, brinquedos, teclados de computador etc</li>
+                        </ul>
+                    </p>
+                </div>
+    
+                <div class="textos">
+                    <h2>Quais são os sintomas</h2>
+                    <p>
+                        Os sintomas da COVID-19 podem variar de um simples resfriado até uma pneumonia severa. Sendo os sintomas mais comuns:
+                        <ul>
+                            <li>Tosse</li>
+                            <li>Febre</li>
+                            <li>Coriza</li>
+                            <li>Dor de garganta</li>
+                            <li>Dificuldade para respirar</li>
+                        </ul>
+                    </p>
+                </div>
+            </section>
+
+
+            <section class="text-block">
+                <div class="textos">
+                    <h2>Diagnóstico</h2>
+                    <p>
+                        O diagnóstico da COVID-19 é realizado primeiramente pelo profissional de saúde que deve avaliar a presença de critérios clínicos:
+                        <ul>
+                            <li>Pessoa com quadro respiratório agudo, caracterizado por sensação febril ou febre, que pode ou não estar presente na hora da consulta (podendo ser relatada ao profissional de saúde), acompanhada de tosse OU dor de garganta OU coriza OU dificuldade respiratória, o que é chamado de Síndrome Gripal.
+                            </li>
+                            <li>Pessoa com desconforto respiratório/dificuldade para respirar OU pressão persistente no tórax OU saturação de oxigênio menor do que 95% em ar ambiente OU coloração azulada dos lábios ou rosto, o que é chamado de Síndrome Respiratória Aguda Grave
+                            </li>
+                        </ul>
+
+                        Caso o paciente apresente os sintomas, o profissional de saúde poderá solicitar exame laboratoriais:
+
+                        <ul>
+                            <li>De biologia molecular (RT-PCR em tempo real) que diagnostica tanto a COVID-19, a Influenza ou a presença de Vírus Sincicial Respiratório (VSR).
+                            </li>
+                            <li> Imunológico (teste rápido) que detecta, ou não, a presença de anticorpos em amostras coletadas somente após o sétimo dia de início dos sintomas.
+                            </li>
+                        </ul>
+
+                        O diagnóstico da COVID-19 também pode ser realizado a partir de critérios como: histórico de contato próximo ou domiciliar, nos últimos 7 dias antes do aparecimento dos sintomas, com caso confirmado laboratorialmente para COVID-19 e para o qual não foi possível realizar a investigação laboratorial específica, também observados pelo profissional durante a consulta.
+
+                    </p>
+                </div>
+    
+                <div class="textos">
+                    <h2>Como se proteger</h2>
+                    <p>
+                        As recomendações de prevenção à COVID-19 são as seguintes:
+                        <ul>
+
+                            <li>Lave com frequência as mãos até a altura dos punhos, com água e sabão, ou então higienize com álcool em gel 70%.                        </li>
+                            <li>Ao tossir ou espirrar, cubra nariz e boca com lenço ou com o braço, e não com as mãos.</li>
+                            <li>Evite tocar olhos, nariz e boca com as mãos não lavadas.</li>
+                            <li>Ao tocar, lave sempre as mãos como já indicado.</li>
+                            <li>Mantenha uma distância mínima de cerca de 2 metros de qualquer pessoa tossindo ou espirrando.</li>
+                            <li>Evite abraços, beijos e apertos de mãos. Adote um comportamento amigável sem contato físico, mas sempre com um sorriso no rosto.</li>
+                            <li>Higienize com frequência o celular e os brinquedos das crianças.</li>
+                            <li>Não compartilhe objetos de uso pessoal, como talheres, toalhas, pratos e copos.</li>
+                            <li>Mantenha os ambientes limpos e bem ventilados.</li>
+                            <li>Evite circulação desnecessária nas ruas, estádios, teatros, shoppings, shows, cinemas e igrejas. Se puder, fique em casa.</li>
+                            <li>Se estiver doente, evite contato físico com outras pessoas, principalmente idosos e doentes crônicos, e fique em casa até melhorar.</li>
+                            <li>Durma bem e tenha uma alimentação saudável.
+                            <li>Utilize máscaras caseiras ou artesanais feitas de tecido em situações de saída de sua residência.
+                            <li>Tosse</li>
+                            <li>Febre</li>
+                            <li>Coriza</li>
+                            <li>Dor de garganta</li>
+                            <li>Dificuldade para respirar</li>
+                        </ul>
+                    </p>
+                </div>
+
+            </section>
+
+                
+
+            <div class="border-frame">
+                <h3 class="h3-header">Veja o video a seguir para entender mais</h3>
+
+                <iframe width="420" height="345" 
+                src="https://www.youtube.com/embed/0N7SBfTsI3s" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+            </div>
+            
+        </section>
+        
+        <footer id="rodape">
+            <h3>&copy; 2020 - Fernando Pires</h3>
+            <h4><a target="_blank" href="http://www.facebook.com/fernando.pirees"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a> | <a target="_blank" href="https://www.instagram.com/feernandopires/?hl=pt-br"> <i class="fa fa-instagram" aria-hidden="true"></i></a></h4>
+        </footer>
+
+    </header>
+</body>
+
+<script language="JavaScript" src="_javascript/index.js">
+</script>
+</html>
